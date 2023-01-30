@@ -67,10 +67,10 @@ The most impactful features are the outlet type - Type 1, 2, or 3 and the sale p
 
 The coefficients for each item:
 
-Outlet_Type_Supermarket Type3 3,365.88
-Outlet_Type_Supermarket Type1 1,940.48
-Outlet_Type_Supermarket Type2 1,657.92
-Item_MRP 984.31
+Outlet_Type_Supermarket Type3 3,365.88<br>
+Outlet_Type_Supermarket Type1 1,940.48<br>
+Outlet_Type_Supermarket Type2 1,657.92<br>
+Item_MRP 984.31<br>
 
 means that depending on the store where the product is sold, these are the baseline sales figures for the product.
 
