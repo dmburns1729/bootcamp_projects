@@ -55,6 +55,33 @@ All in, the Random Forest Regressor was the best fit of the data compared to the
 
 The Random Forest Regressor yielded good not great results.  As measured by R2, the model explains about 60% of the variation in the data.  With greater data preprocessing and more sophisticated data tools we can likely do better.  We should continue to look at other options and data processing for improvement.  We need to rub some funk on it! 
 
+## Additional Information Concerning the Regression
+
+We ran two additional regressions of the sales data. The first was a linear regression which yielded several top important features with the following coefficients:
+
+#### Linear Regression
+
+![Linreg](https://user-images.githubusercontent.com/113855848/215377220-f003e105-d349-4e06-8712-05456571a25c.png)
+
+The most impactful features are the outlet type - Type 1, 2, or 3 and the sale price of the object. When predicting the sale of an item, the size and by implication the volume of products sold, have a large impact on the total sales of the product.
+
+The coefficients for each item:
+
+Outlet_Type_Supermarket Type3 3,365.88
+Outlet_Type_Supermarket Type1 1,940.48
+Outlet_Type_Supermarket Type2 1,657.92
+Item_MRP 984.31
+
+means that depending on the store where the product is sold, these are the baseline sales figures for the product.
+
+The Item_MRP coefficient means that for every increase in the unit price of the item, the total sales volume increases by 984.
+
+#### Random Forest Regressor
+
+![forestreg](https://user-images.githubusercontent.com/113855848/215377549-fce3a2a0-5940-4c94-8fe4-4c205b9ce979.png)
+
+Based on both 'importance' and 'permutation importance' the top five features per the Random Forest Regressor are item_MRP, outlet size (1, 2, and 3), and Item_Visibility.  
+
 ### For Further Information
 
 For any additional questions, please contact me at dmburns@gmail.com
